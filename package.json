@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"no test specified\" && exit 0",
     "start": "node server.js",
-    "lint": "eslint"
+    "lint": "eslint --ext .js ."
   },
   "devDependencies": {
     "eslint": "^6.5.1"
