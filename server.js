@@ -1,5 +1,5 @@
 
-var http = require('http')
+const http = require('http')
 var fileSystem = require('fs')
 
 var server = http.createServer(function(req, resp){
