@@ -1,6 +1,6 @@
 
 const http = require('http')
-var fileSystem = require('fs')
+const fileSystem = require('fs')
 
 var server = http.createServer(function(req, resp){
 	fileSystem.readFile('./index.html', function(error, fileContent){
