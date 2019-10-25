@@ -6,7 +6,7 @@ module.exports = {
     "node": true,
   },
   "extends": [
-    "airbnb",
+    // "airbnb",
     "eslint:recommended"
   ],
   "globals": {
