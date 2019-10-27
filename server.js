@@ -2,16 +2,16 @@
 const http = require('http')
 const fileSystem = require('fs')
 
-const server = http.createServer(function(req, resp){
+const server = http.createServer(function(req, res){
 	fileSystem.readFile('./index.html', function(error, fileContent){
 		if(error){
-			resp.writeHead(500, {'Content-Type': 'text/plain'})
-			resp.end('Error')
+			res.writeHead(500, {'Content-Type': 'text/plain'})
+			res.end('Error')
 		}
 		else{
-			resp.writeHead(200, {'Content-Type': 'text/html'})
-			resp.write(fileContent)
-			resp.end()
+			res.writeHead(200, {'Content-Type': 'text/html'})
+			res.write(fileContent)
+			res.end()
 		}
 	})
 })
